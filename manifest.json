@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Modify PrairieLearn Progress Bar",
+    "version": "1.0",
+    "description": "Sets all progress bars to 100% on PrairieLearn.",
+    "permissions": ["scripting"],
+    "host_permissions": ["https://us.prairielearn.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://us.prairielearn.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_start"
+      }
+    ]
+  }
+  
